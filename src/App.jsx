@@ -4,7 +4,7 @@ import games from './data/games.json';
 function App() {
 
   return (
-    <>
+    <>   
       <h1>Games Data</h1>
       <p>There are {games.length} games.</p>
       <div>
