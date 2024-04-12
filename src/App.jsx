@@ -1,6 +1,8 @@
 import './App.css';
 import games from './data/games.json';
 
+const searchText = 'ag';
+
 function App() {
 
   return (
@@ -8,7 +10,7 @@ function App() {
       <h1>Games Data</h1>
       <p>There are {games.length} games.</p>
       <div>
-        {games.map(game => {
+        {games.filter(m => m.title.toLowerCase().includes(searchText.toLowerCase())).map(game => {
           return (
             <>
               <div key={game.id}>{game.title}</div>
