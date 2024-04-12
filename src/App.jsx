@@ -7,13 +7,16 @@ function App() {
     <>
       <h1>Games Data</h1>
       <p>There are {games.length} games.</p>
-      <ul>
+      <div>
         {games.map(game => {
           return (
-            <li key={game.id}>{game.title}</li>
+            <>
+              <div key={game.id}>{game.title}</div>
+              <img src={`images/${game.image}.jpg`} />
+            </>
           );
         })}
-      </ul>
+      </div>
     </>
   );
 }

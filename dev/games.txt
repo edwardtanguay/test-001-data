@@ -12,7 +12,7 @@
         price: 39.99,
         availability: 'sofort verfügbar',
 		// eslint-disable-next-line no-undef
-        image: require('./src/pics/a-plague-tale-innocence.webp').default
+        image: "a-plague-tale-innocence"
 	},
 	{ /* Checked */
         id: 2,
